@@ -21,11 +21,11 @@
  */
 /**
  *  第四个参数 关联策略 是一个枚举值
- *  OBJC_ASSOCIATION_ASSIGN =           0,    //关联对象的属性是弱引用
- *  OBJC_ASSOCIATION_RETAIN_NONATOMIC = 1,    //关联对象的属性是强引用并且关联对象不使用原子性
- *  OBJC_ASSOCIATION_COPY_NONATOMIC =   3,    //关联对象的属性是copy并且关联对象不使用原子性
- *  OBJC_ASSOCIATION_RETAIN =           01401,//关联对象的属性是copy并且关联对象使用原子性
- *  OBJC_ASSOCIATION_COPY =             01403 //关联对象的属性是copy并且关联对象使用原子性
+ *  OBJC_ASSOCIATION_ASSIGN =           0,    // 关联对象的属性是弱引用,通常是基本数据类型，如int、float，非线程安全
+ *  OBJC_ASSOCIATION_RETAIN_NONATOMIC = 1,    // 关联对象的属性是强引用并且关联对象不使用原子性
+ *  OBJC_ASSOCIATION_COPY_NONATOMIC =   3,    // 关联对象的属性是copy并且关联对象不使用原子性
+ *  OBJC_ASSOCIATION_RETAIN =           01401,// 关联对象的属性是copy并且关联对象使用原子性
+ *  OBJC_ASSOCIATION_COPY =             01403 // 关联对象的属性是copy并且关联对象使用原子性
  */
 - (void)setName:(NSString *)name
 {
